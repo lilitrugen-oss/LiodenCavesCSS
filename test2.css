@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Sue+Ellen+Francisco&display=swap');
+
+:root {
+    --colorBlack: #000000;
+
+    --color1: #0C2521;
+    --color2: #2D7868;
+    --color3: #64B39A;
+
+    --color4: #0B2558;
+    --color5: #1C618B;
+    --color6: #2D90A7;
+
+    --colorWhite: #D0FEFF;
+
+    --tcolor1: rgba(12, 37, 33, 0.5);
+    --tcolor2: rgba(45, 120, 104, 0.5);
+    --tcolor3: rgba(11, 37, 88, 0.5);
+  
+    --tcolor4: rgba(28, 97, 139, 0.5);
+    --tcolor5: rgba(124, 206, 151, 0.5);
+    --tcolor6: rgba(162, 220, 163, 0.5);
+
+    --tcolor7: rgba(63, 191, 192, 0.3);
+    --tcolor8: rgba(83, 242, 184, 0.3);
+    --tcolor9: rgba(208, 254, 255, 0.3);
+
+    --font-1: "Glass Antiqua", cursive;
+    --font-2: "Sue Ellen Francisco", cursive;
+}
+
+body {
+    background: url(https://images.pexels.com/photos/17598831/pexels-photo-17598831.jpeg) fixed center;
+    background-size: cover;
+}
+
+
+
+/*blocks*/
+.container-block-main {
+    color: var(--color6);
+    height: 800px;
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 3px;
+    font-family: var(--font-2);
+    font-size: small;
+}
+
+.block-main {
+    display: block;
+    overflow: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: var(--tcolor4);
+    border: var(--color4) 4px solid;
+    border-radius: 10px;
+    text-align: center;
+    scrollbar-color: var(--color4) var(--color6);
+    line-height: 1;
+}
+
+.block1-info {
+    grid-column: 1 / 3;
+    grid-row: 1 / 5;
+}
+
+.block2-info {
+    grid-column: 3 / 6;
+    grid-row: 1 / 3;
+}
+
+.block3-info {
+    grid-column: 3 / 6;
+    grid-row: 3 / 5;
+}
+
+.block-main-header font {
+    color: var(--colorWhite) !important;
+    font-size: x-large !important;
+}
+
+.block-lion-card {
+    display: block;
+    width: 98%;
+    height: auto;
+    margin: 2px;
+    border: 4px solid var(--tcolor6);
+    border-radius: 10px;
+    padding: 5px;
+    padding-top: 10px;
+    color: var(--color6);
+}
+
+.block-lion-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px dotted var(--color6);
+    margin-bottom: 5px;
+}
+
+.lion-card-name {
+    font-size: larger;
+}
+
+
+/*?credits*/
+.breadcrumb::after {
+    content: "CSS by Polaris Penumbra (#419566)";
+    position: absolute;
+    right: 20%;
+    z-index: 100;
+    color: var(--color5);
+}
